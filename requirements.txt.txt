@@ -1,0 +1,6 @@
+fastapi
+pydantic
+python-jose
+python-multipart
+sqlalchemy
+uvicorn
