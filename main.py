@@ -26,3 +26,6 @@ app.include_router(users.router)
 app.include_router(posts.router)
 app.include_router(login.router)
 
+if __name__ == "__main__":
+    import uvicorn
+    uvicorn.run(app, host="0.0.0.0", port=8080)
