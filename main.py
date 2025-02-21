@@ -22,6 +22,10 @@ app.add_middleware(
 
 Base.metadata.create_all(engine)
 
+@app.get("/")  # Make sure this route exists
+def read_root():
+    return {"message": "Hello from FastAPI on Replit!"}
+
 app.include_router(users.router)
 app.include_router(posts.router)
 app.include_router(login.router)
